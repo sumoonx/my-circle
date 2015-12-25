@@ -3,4 +3,55 @@
     <dimen name="activity_horizontal_margin">16dp</dimen>
     <dimen name="activity_vertical_margin">16dp</dimen>
     <dimen name="fab_margin">16dp</dimen>
+
+    <!-- 字体大小-->
+    <!-- frame页title(h1) 三个按钮（btn1）-->
+    <dimen name="h1">15pt</dimen>
+    <dimen name="h2">12pt</dimen>
+    <dimen name="h3">10pt</dimen>
+    <dimen name="h4">8pt</dimen>
+
+    <dimen name="btn1">12pt</dimen>
+    <dimen name="btn2">12pt</dimen>
+    <dimen name="btn3">12pt</dimen>
+
+    <dimen name="p1">15pt</dimen>
+    <dimen name="p2">13pt</dimen>
+    <dimen name="p3">10pt</dimen>
+    <dimen name="p4">9pt</dimen>
+
+
+    <!-- 边距margin -->
+    <!-- mine_main使用了（left，right）-->
+    <!-- 最外层边距，各靠边元素与屏幕边缘-->
+    <dimen name="left">15dp</dimen>
+    <dimen name="right">10dp</dimen>
+    <dimen name="top">15dp</dimen>
+    <!-- 个元素与其他元素边距-->
+    <dimen name="left_elem">10dp</dimen>
+    <dimen name="right_elem">10dp</dimen>
+    <dimen name="top_elem">10dp</dimen>
+    <!--分类页各图标间距 -->
+    <dimen name="sort_icon_margin">8dp</dimen>
+
+    <!--mine_main页水平分割线上外边距-->
+    <dimen name="top_elem_hr">15dp</dimen>
+
+
+    <!-- 宽高-->
+    <!-- 文字输入框EditText的高度-->
+    <dimen name="text_height">40dp</dimen>
+
+    <!-- 图片-->
+    <!-- 发布页上传宝贝图显示为img_m，我的界面用户头像显示为img_xxs大小-->
+    <dimen name="img_xxl">300dp</dimen>
+    <dimen name="img_xl">240dp</dimen>
+    <dimen name="img_l">200dp</dimen>
+    <dimen name="img_m">160dp</dimen>
+    <dimen name="img_s">120dp</dimen>
+    <dimen name="img_xs">105dp</dimen>
+    <dimen name="img_xxs">80dp</dimen>
+    <dimen name="img_3xs">60dp</dimen>
+    <dimen name="img_4xs">40dp</dimen>
+
 </resources>

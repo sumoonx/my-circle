@@ -3,4 +3,12 @@
     <color name="colorPrimary">#3F51B5</color>
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#FF4081</color>
+
+    <color name="bg1">#ffffff</color>
+
+    <color name="colorsucess">#009900</color>
+    <color name="colorwarning">#990001</color>
+
+    <!-- 水平分割线的颜色-->
+    <color name="color_hr">#000000</color>
 </resources>
