@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:id="@+id/mine_center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:id="@+id/info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/top">
+            <ImageView
+                android:id="@+id/img_prof"
+                android:layout_width="@dimen/img_xxs"
+                android:layout_height="@dimen/img_xxs"
+                android:background="@drawable/meishi1"
+                android:layout_marginLeft="@dimen/left"/>
+
+            <TextView
+                android:id="@+id/text_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/img_prof"
+                android:layout_alignTop="@id/img_prof"
+                android:layout_marginTop="@dimen/top_elem"
+                android:layout_marginLeft="@dimen/left_elem"
+                android:text="三小油"
+                android:textSize="@dimen/p3" />
+            <TextView
+                android:id="@+id/text_motto"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/img_prof"
+                android:layout_alignBottom="@id/img_prof"
+                android:layout_below="@id/text_name"
+                android:layout_marginLeft="@dimen/right_elem"
+                android:text="美丽的三小油热爱生活"
+                android:textSize="@dimen/p4"
+                android:gravity="center_vertical"/>
+            <ImageButton
+                android:id="@+id/personal_profile_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/right"
+                android:src="@drawable/btn_down"
+                android:background="#ffffff"/>
+                <View  android:layout_height="1px"
+                    android:layout_width="match_parent"
+                    android:layout_below="@id/img_prof"
+                    android:layout_marginTop="@dimen/top_elem_hr"
+                    android:background="@color/color_hr"
+
+                    />
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/release"
+            android:layout_below="@id/info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp">
+            <TextView
+                android:id="@+id/text_password"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/left"
+                android:text="我的发布"
+                android:textSize="@dimen/h2" />
+            <ImageButton
+                android:id="@+id/btn_edit_release"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/right"
+                android:src="@drawable/btn_down"
+                android:background="#ffffff"/>
+            <View  android:layout_height="1px"
+                android:layout_width="match_parent"
+                android:layout_below="@id/text_password"
+                android:layout_marginTop="@dimen/top_elem_hr"
+                android:background="@color/color_hr" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/message"
+            android:layout_below="@id/release"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp">
+            <TextView
+                android:id="@+id/text_message"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/left"
+                android:text="我的消息"
+                android:textSize="@dimen/h2" />
+            <ImageButton
+                android:id="@+id/btn_edit_message"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/right"
+                android:src="@drawable/btn_down"
+                android:background="#ffffff"/>
+            <View  android:layout_height="1px"
+                android:layout_width="match_parent"
+                android:layout_below="@id/text_message"
+                android:layout_marginTop="@dimen/top_elem_hr"
+                android:background="@color/color_hr" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/setting"
+            android:layout_below="@id/message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp">
+            <TextView
+                android:id="@+id/text_setting"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/left"
+                android:text="  设置"
+                android:textSize="@dimen/h2" />
+            <ImageButton
+                android:id="@+id/btn_edit_setting"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/right"
+                android:src="@drawable/btn_down"
+                android:background="#ffffff"/>
+            <View  android:layout_height="1px"
+                android:layout_width="match_parent"
+                android:layout_below="@id/text_setting"
+                android:layout_marginTop="@dimen/top_elem_hr"
+                android:background="@color/color_hr" />
+        </RelativeLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/setting"
+            android:layout_marginTop="15dp"
+            android:orientation="vertical">
+            <Button
+                android:id="@+id/btn_quit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="退出登录"
+                android:textSize="@dimen/btn2" />
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>
