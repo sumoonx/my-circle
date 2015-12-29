@@ -17,18 +17,32 @@
     <string name="title_activity_main">MainActivity</string>
     <string name="hello_world">Hello world!</string>
 
-    <!--frame_main中 底部三个切换按键的名称 -->
-    <string name="frame_title">跳蚤市场</string>
-    <string name="frame_btn1">分类</string>
-    <string name="frame_btn2">发布</string>
-    <string name="frame_btn3">我的</string>
+    <string name="flea_market">跳蚤市场</string>
+    <string name="sort">分类</string>
+    <string name="release">发布</string>
+    <string name="myrelease">我的发布</string>
+    <string name="mymessage">我的消息</string>
+    <string name="mine">我的</string>
 
-    <!-- sort_main分类页用到的分类图标，hij对应第i行j列图标名称和点击各图标进入的二级界面的顶部标题-->
-    <string name="sort_h11">美食</string>
-    <string name="sort_h12">盆栽</string>
-    <string name="sort_h13">运动</string>
-    <string name="sort_h21">文具</string>
-    <string name="sort_h22">书籍</string>
-    <string name="sort_h23">其他</string>
+    <string name="setting">设置</string>
+    <string name="quit">退出登录</string>
+    <string name="upload">上传</string>
+    <string name="upload_img">上传图像</string>
+    <string name="admit_release">确认发布</string>
+
+    <string name="goodname">宝贝名称</string>
+    <string name="gooddescription">宝贝描述</string>
+    <string name="goodsort">宝贝类别</string>
+    <string name="contact">联系方式</string>
+
+    <string name="cloth">服饰</string>
+    <string name="makeup">化妆</string>
+    <string name="sport">运动</string>
+    <string name="stationery">文具</string>
+    <string name="book">书籍</string>
+    <string name="other">其他</string>
+    <string name="outdoor">户外</string>
+    <string name="electronic">电子</string>
+
 
 </resources>

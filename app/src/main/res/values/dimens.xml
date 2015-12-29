@@ -6,8 +6,10 @@
 
     <!-- 字体大小-->
     <!-- frame页title(h1) 三个按钮（btn1）-->
-    <dimen name="h1">15pt</dimen>
-    <dimen name="h2">12pt</dimen>
+    <dimen name="h1">22sp</dimen>
+    <dimen name="h2">18sp</dimen>
+    <dimen name="text_normal">18sp</dimen>
+    <dimen name="vertical_nav">22sp</dimen>
     <dimen name="h3">10pt</dimen>
     <dimen name="h4">8pt</dimen>
 
@@ -24,9 +26,9 @@
     <!-- 边距margin -->
     <!-- mine_main使用了（left，right）-->
     <!-- 最外层边距，各靠边元素与屏幕边缘-->
-    <dimen name="left">15dp</dimen>
-    <dimen name="right">10dp</dimen>
-    <dimen name="top">15dp</dimen>
+    <dimen name="left">20dp</dimen>
+    <dimen name="right">20dp</dimen>
+    <dimen name="top">20dp</dimen>
     <!-- 个元素与其他元素边距-->
     <dimen name="left_elem">10dp</dimen>
     <dimen name="right_elem">10dp</dimen>
@@ -49,9 +51,10 @@
     <dimen name="img_l">200dp</dimen>
     <dimen name="img_m">160dp</dimen>
     <dimen name="img_s">120dp</dimen>
-    <dimen name="img_xs">105dp</dimen>
+    <dimen name="img_xs">76dp</dimen>
     <dimen name="img_xxs">80dp</dimen>
     <dimen name="img_3xs">60dp</dimen>
     <dimen name="img_4xs">40dp</dimen>
-
+    <!-- fragment切换的时候出现的那条蓝色线的宽度-->
+    <dimen name="fragment_viewpager_margin">12dp</dimen>
 </resources>

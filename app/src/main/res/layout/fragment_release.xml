@@ -4,128 +4,133 @@
     android:layout_height="match_parent">
 
     <RelativeLayout
+        android:id="@+id/fr_body_relativelayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
         <LinearLayout
-            android:id="@+id/good_name"
+            android:id="@+id/fr_goodname_linearlayout"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="@dimen/top">
             <TextView
-                android:id="@+id/text_good_name"
+                android:id="@+id/fr_goodname_text"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="@dimen/left"
-                android:layout_gravity="bottom"
-                android:text="宝贝名称："
-                android:textSize="@dimen/p2"/>
+                android:layout_gravity="center"
+                android:text="@string/goodname"
+                android:textSize="@dimen/vertical_nav"/>
             <EditText
-                android:id="@+id/eidt_good_name"
+                android:id="@+id/fr_goodname_edittext"
                 android:layout_width="match_parent"
                 android:layout_height="@dimen/text_height"
                 android:layout_marginRight="@dimen/right"
+                android:layout_marginLeft="@dimen/left_elem"
                 android:background="@drawable/back_circle"/>
-
         </LinearLayout>
         <LinearLayout
-            android:id="@+id/good_info"
+            android:id="@+id/fr_goodinfo_linearlayout"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_below="@id/good_name"
+            android:layout_below="@id/fr_goodname_linearlayout"
             android:layout_marginTop="@dimen/top_elem">
             <TextView
-                android:id="@+id/text_good_info"
+                android:id="@+id/fr_goodinfo_text"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="bottom"
                 android:layout_marginLeft="@dimen/left"
-                android:text="宝贝描述："
-                android:textSize="@dimen/p2"/>
+                android:text="@string/gooddescription"
+                android:textSize="@dimen/vertical_nav"/>
             <EditText
-                android:id="@+id/eidt_good_info"
+                android:id="@+id/fr_goodinfo_edittext"
                 android:layout_width="match_parent"
                 android:layout_height="@dimen/text_height"
                 android:layout_marginRight="@dimen/right"
+                android:layout_marginLeft="@dimen/left_elem"
                 android:background="@drawable/back_circle"/>
-
         </LinearLayout>
         <LinearLayout
-            android:id="@+id/good_sort"
+            android:id="@+id/fr_goodsort_linearlayout"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_below="@id/good_info"
+            android:layout_below="@id/fr_goodinfo_linearlayout"
             android:layout_marginTop="@dimen/top_elem">
             <TextView
-                android:id="@+id/text_good_sort"
+                android:id="@+id/fr_goodsort_text"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_gravity="bottom"
+                android:layout_gravity="center_vertical"
                 android:layout_marginLeft="@dimen/left"
-                android:text="宝贝类别："
-                android:textSize="@dimen/p2"/>
-            <Spinner android:id="@+id/edit_good_sort"
+                android:text="@string/goodsort"
+                android:textSize="@dimen/vertical_nav"/>
+            <Spinner android:id="@+id/fr_goodsort_spinner"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/left_elem"
                 android:layout_marginRight="@dimen/right" />
         </LinearLayout>
 
         <LinearLayout
-            android:id="@+id/add_pic"
+            android:id="@+id/fr_goodpic_linearlayout"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_below="@id/good_sort"
+            android:layout_below="@id/fr_goodsort_linearlayout"
             >
             <Button
-                android:id="@+id/btn_add_img"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:id="@+id/fr_addgoodpic_btn"
+                android:layout_width="100dp"
+                android:layout_height="120dp"
                 android:layout_gravity="bottom"
+                android:background="@drawable/button"
                 android:text="添加图片"
                 android:layout_marginLeft="10dp"
-                android:textSize="@dimen/btn2"/>
+                android:textSize="@dimen/h1"/>
             <ImageView
-                android:id="@+id/img_add_good"
+                android:id="@+id/fr_addgoodpic_img"
                 android:layout_width="@dimen/img_m"
                 android:layout_height="@dimen/img_m"
                 android:layout_marginLeft="12dp"
                 android:src="@drawable/meishi_s"/>
         </LinearLayout>
         <LinearLayout
-            android:id="@+id/contact"
+            android:id="@+id/fr_contact_linearlayout"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_below="@id/add_pic"
+            android:layout_below="@id/fr_goodpic_linearlayout"
             android:layout_marginTop="@dimen/top_elem">
             <TextView
-                android:id="@+id/text_contact"
+                android:id="@+id/fr_contact_text"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_gravity="bottom"
+                android:layout_gravity="center"
                 android:layout_marginLeft="@dimen/left"
-                android:text="联系方式："
-                android:textSize="@dimen/p2"/>
+                android:text="@string/contact"
+                android:textSize="@dimen/vertical_nav"/>
             <EditText
-                android:id="@+id/eidt_contact"
+                android:id="@+id/fr_contact_edittext"
                 android:layout_width="match_parent"
                 android:layout_height="@dimen/text_height"
                 android:layout_marginRight="@dimen/right"
+                android:layout_marginLeft="@dimen/left_elem"
                 android:background="@drawable/back_circle"/>
 
         </LinearLayout>
         <LinearLayout
-            android:id="@+id/btn_release"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_below="@id/contact"
+            android:layout_below="@id/fr_contact_linearlayout"
             android:layout_marginTop="@dimen/top_elem"
             android:orientation="vertical">
             <Button
-                android:id="@+id/btn_release"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:id="@+id/fr_admitrelease_btn"
+                android:layout_width="128dp"
+                android:layout_height="128dp"
                 android:layout_gravity="center"
-                android:text="确认发布"
-                android:textSize="@dimen/btn2" />
+                android:background="@drawable/button"
+                android:layout_centerInParent="true"
+                android:text="@string/admit_release"
+                android:textSize="@dimen/h1" />
         </LinearLayout>
     </RelativeLayout>
 </RelativeLayout>

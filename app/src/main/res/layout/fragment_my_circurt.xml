@@ -3,44 +3,45 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
     <RelativeLayout
-        android:id="@+id/mine_center"
+        android:id="@+id/fmc_body_relativelayout"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/top">
         <RelativeLayout
-            android:id="@+id/info"
+            android:id="@+id/fmc_user_relativelayout"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="@dimen/top">
             <ImageView
-                android:id="@+id/img_prof"
+                android:id="@+id/fmc_profile_img"
                 android:layout_width="@dimen/img_xxs"
                 android:layout_height="@dimen/img_xxs"
-                android:background="@drawable/meishi1"
+                android:background="@drawable/head"
                 android:layout_marginLeft="@dimen/left"/>
 
             <TextView
-                android:id="@+id/text_name"
+                android:id="@+id/fmc_username_text"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_toRightOf="@id/img_prof"
-                android:layout_alignTop="@id/img_prof"
+                android:layout_toRightOf="@id/fmc_profile_img"
+                android:layout_alignTop="@id/fmc_profile_img"
                 android:layout_marginTop="@dimen/top_elem"
                 android:layout_marginLeft="@dimen/left_elem"
-                android:text="三小油"
-                android:textSize="@dimen/p3" />
+                android:text="@string/id_hint"
+                android:textSize="@dimen/text_normal" />
             <TextView
-                android:id="@+id/text_motto"
+                android:id="@+id/fmc_motto_text"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_toRightOf="@id/img_prof"
-                android:layout_alignBottom="@id/img_prof"
-                android:layout_below="@id/text_name"
+                android:layout_toRightOf="@id/fmc_profile_img"
+                android:layout_alignBottom="@id/fmc_profile_img"
+                android:layout_below="@id/fmc_username_text"
                 android:layout_marginLeft="@dimen/right_elem"
-                android:text="美丽的三小油热爱生活"
-                android:textSize="@dimen/p4"
+                android:text="@string/signature_hint"
+                android:textSize="@dimen/text_normal"
                 android:gravity="center_vertical"/>
             <ImageButton
-                android:id="@+id/personal_profile_btn"
+                android:id="@+id/fmc_userdetail_imgbtn"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignParentRight="true"
@@ -48,29 +49,99 @@
                 android:layout_marginRight="@dimen/right"
                 android:src="@drawable/btn_down"
                 android:background="#ffffff"/>
-                <View  android:layout_height="1px"
-                    android:layout_width="match_parent"
-                    android:layout_below="@id/img_prof"
-                    android:layout_marginTop="@dimen/top_elem_hr"
-                    android:background="@color/color_hr"
+        </RelativeLayout>
 
-                    />
-        </RelativeLayout>
+        <ImageView
+            android:id="@+id/fmc_line1"
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:layout_below="@id/fmc_user_relativelayout"
+            android:background="#8f8f8f"
+            android:layout_marginTop="@dimen/top_elem"/>
+
         <RelativeLayout
-            android:id="@+id/release"
-            android:layout_below="@id/info"
+            android:id="@+id/fmc_myrelease_relativelayout"
+            android:layout_below="@id/fmc_line1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="15dp">
+            android:layout_marginTop="@dimen/top_elem">
             <TextView
-                android:id="@+id/text_password"
+                android:id="@+id/fmc_myrelease_text"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/top_elem"
                 android:layout_marginLeft="@dimen/left"
-                android:text="我的发布"
-                android:textSize="@dimen/h2" />
+                android:text="@string/myrelease"
+                android:textSize="@dimen/vertical_nav" />
             <ImageButton
-                android:id="@+id/btn_edit_release"
+                android:id="@+id/fmc_myreleasedetail_imgbtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content "
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/right"
+                android:src="@drawable/btn_down"
+                android:background="#ffffff"/>
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/fmc_line2"
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:layout_below="@id/fmc_myrelease_relativelayout"
+            android:background="#8f8f8f"
+            android:layout_marginTop="@dimen/top_elem"/>
+
+        <RelativeLayout
+            android:id="@+id/fmc_mymessage_relativelayout"
+            android:layout_below="@id/fmc_line2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/top_elem">
+            <TextView
+                android:id="@+id/fmc_mymessage_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/top_elem"
+                android:layout_marginLeft="@dimen/left"
+                android:text="@string/mymessage"
+                android:textSize="@dimen/vertical_nav" />
+            <ImageButton
+                android:id="@+id/fmc_mymessagedetail_imgbtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content "
+                android:layout_marginTop="@dimen/top_elem"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/right"
+                android:src="@drawable/btn_down"
+                android:background="#ffffff"/>
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/fmc_line3"
+            android:layout_below="@id/fmc_mymessage_relativelayout"
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:background="#8f8f8f"
+            android:layout_marginTop="20dp"/>
+
+        <RelativeLayout
+            android:id="@+id/fmc_setting_relativelayout"
+            android:layout_below="@id/fmc_line3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/top_elem">
+            <TextView
+                android:id="@+id/fmc_setting_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/top_elem"
+                android:layout_marginLeft="@dimen/left"
+                android:text="@string/setting"
+                android:textSize="@dimen/vertical_nav" />
+            <ImageButton
+                android:id="@+id/fmc_settingdetail_imgbtn"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignParentRight="true"
@@ -78,81 +149,31 @@
                 android:layout_marginRight="@dimen/right"
                 android:src="@drawable/btn_down"
                 android:background="#ffffff"/>
-            <View  android:layout_height="1px"
-                android:layout_width="match_parent"
-                android:layout_below="@id/text_password"
-                android:layout_marginTop="@dimen/top_elem_hr"
-                android:background="@color/color_hr" />
         </RelativeLayout>
-        <RelativeLayout
-            android:id="@+id/message"
-            android:layout_below="@id/release"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="15dp">
-            <TextView
-                android:id="@+id/text_message"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="@dimen/left"
-                android:text="我的消息"
-                android:textSize="@dimen/h2" />
-            <ImageButton
-                android:id="@+id/btn_edit_message"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignParentRight="true"
-                android:layout_centerVertical="true"
-                android:layout_marginRight="@dimen/right"
-                android:src="@drawable/btn_down"
-                android:background="#ffffff"/>
-            <View  android:layout_height="1px"
-                android:layout_width="match_parent"
-                android:layout_below="@id/text_message"
-                android:layout_marginTop="@dimen/top_elem_hr"
-                android:background="@color/color_hr" />
-        </RelativeLayout>
-        <RelativeLayout
-            android:id="@+id/setting"
-            android:layout_below="@id/message"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="15dp">
-            <TextView
-                android:id="@+id/text_setting"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="@dimen/left"
-                android:text="  设置"
-                android:textSize="@dimen/h2" />
-            <ImageButton
-                android:id="@+id/btn_edit_setting"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignParentRight="true"
-                android:layout_centerVertical="true"
-                android:layout_marginRight="@dimen/right"
-                android:src="@drawable/btn_down"
-                android:background="#ffffff"/>
-            <View  android:layout_height="1px"
-                android:layout_width="match_parent"
-                android:layout_below="@id/text_setting"
-                android:layout_marginTop="@dimen/top_elem_hr"
-                android:background="@color/color_hr" />
-        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/fmc_line4"
+            android:layout_below="@id/fmc_setting_relativelayout"
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:background="#8f8f8f"
+            android:layout_marginTop="20dp"/>
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_below="@id/setting"
+            android:layout_below="@id/fmc_line4"
             android:layout_marginTop="15dp"
             android:orientation="vertical">
             <Button
-                android:id="@+id/btn_quit"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:id="@+id/fmc_quit_btn"
+                android:layout_width="128dp"
+                android:layout_height="128dp"
                 android:layout_gravity="center"
-                android:text="退出登录"
-                android:textSize="@dimen/btn2" />
+                android:background="@drawable/button"
+                android:layout_centerInParent="true"
+                android:text="@string/quit"
+                android:textSize="@dimen/h1" />
         </LinearLayout>
     </RelativeLayout>
 </RelativeLayout>
