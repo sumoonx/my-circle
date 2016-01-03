@@ -32,6 +32,7 @@
 
     <string name="goodname">宝贝名称</string>
     <string name="gooddescription">宝贝描述</string>
+    <string name="goodprice">宝贝价格</string>
     <string name="goodsort">宝贝类别</string>
     <string name="contact">联系方式</string>
 
