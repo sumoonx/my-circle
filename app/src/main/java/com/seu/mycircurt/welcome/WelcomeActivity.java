@@ -17,7 +17,7 @@ public class WelcomeActivity extends BaseActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        Logger.init();
+                Logger.init();
 
         //start your activity here, remember to register it in the manifest file
         startActivity(new Intent(WelcomeActivity.this, MainActivity.class));
