@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content">
+    <ImageView
+        android:id="@+id/my_msg_list_head"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/head"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp" />
+    <TextView
+        android:id="@+id/my_msg_list_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        android:text="@string/my_msg_list_id"
+        android:layout_below="@+id/my_msg_list_head"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="7dp"/>
+    <TextView
+        android:id="@+id/my_msg_list_resp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/my_msg_list_resp"
+        android:textSize="16sp"
+        android:layout_toRightOf="@+id/my_msg_list_head"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="20dp"
+        android:maxEms="10"
+        android:singleLine="true"
+        android:ellipsize="end"/>
+    <TextView
+        android:id="@+id/my_msg_detail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/my_msg_list_resp"
+        android:layout_toRightOf="@id/my_msg_list_head"
+        android:text="@string/my_msg_list_oricontent"
+        android:textSize="14sp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="6dp"
+        android:maxEms="10"
+        android:singleLine="true"
+        android:ellipsize="end"/>
+    <ImageView
+        android:id="@+id/my_msg_list_icon"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/message"
+        android:scaleType="fitCenter"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"/>
+
+</RelativeLayout>

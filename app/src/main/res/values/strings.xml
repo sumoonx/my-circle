@@ -31,9 +31,12 @@
     <string name="admit_release">确认发布</string>
 
     <string name="goodname">宝贝名称</string>
+    <string name="fragment_release_name">不超过10个字</string>
     <string name="gooddescription">宝贝描述</string>
+    <string name="fragment_release_description">不超过300字</string>
     <string name="goodsort">宝贝类别</string>
     <string name="contact">联系方式</string>
+    <string name="fragment_release_contact">手机或邮箱</string>
 
     <string name="cloth">服饰</string>
     <string name="makeup">化妆</string>
@@ -43,6 +46,71 @@
     <string name="other">其他</string>
     <string name="outdoor">户外</string>
     <string name="electronic">电子</string>
+
+    <!-- activity_my_info -->
+    <string name="my_info_Email">xxxx&#064;qq.com</string>
+    <string name="my_info_title">个人信息</string>
+    <string name="my_info_id">ID&#058;</string>
+    <string name="my_info_name">三小油</string>
+    <string name="my_info_sig">签名</string>
+    <string name="my_info_words">啥也没说</string>
+    <string name="my_info_phone">手机</string>
+    <string name="my_info_number">输入手机号</string>
+    <string name="my_info_mail">邮箱</string>
+    <string name="my_info_vipswd">修改密码</string>
+    <string name="my_info_save">保存修改</string>
+    <!-- activity_modify_pwd -->
+    <string name="modify_pwd_title">修改密码</string>
+    <string name="modify_pwd_original">原始密码</string>
+    <string name="modify_pwd_new">新密码</string>
+    <string name="modify_pwd_again">再次输入</string>
+    <string name="modify_pwd_save">确认修改</string>
+    <!-- activity_about_us -->
+    <string name="about_us">关于我们</string>
+    <string name="about_us_contact">联系方式</string>
+    <string name="about_us_address">378683216&#064;qq.com</string>
+    <string name="about_us_people">开发人员</string>
+    <string name="about_us_name">Cloris</string>
+    <string name="about_us_instruction">APP简介</string>
+    <string name="about_us_saysome">说点什么</string>
+    <!-- activity_detail_sport -->
+    <string name="detail_sport_title">运动</string>
+    <string name="detail_sport_name">羽毛球拍</string>
+    <string name="detail_sport_price">150元</string>
+    <string name="detail_sport_id">三小油</string>
+    <string name="detail_sport_date">2015&#8211;12&#8211;23</string>
+    <string name="detail_sport_content">这里写宝贝描述，省略500字</string>
+    <string name="detail_sport_resp">回复</string>
+    <!-- activity_feed_back -->
+    <string name="feed_back_title">意见反馈</string>
+    <string name="feed_back_save">确认提交</string>
+    <!-- activity_my_msg -->
+    <string name="my_msg_title">我的消息</string>
+    <!-- activity_my_rls -->
+    <string name="my_rls_title">我的发布</string>
+    <!-- activity_setting -->
+    <string name="setting_title">设置</string>
+    <string name="setting_alarm">消息提醒</string>
+    <string name="setting_clear">清除缓存</string>
+    <string name="setting_feed_back">意见反馈</string>
+    <string name="setting_about_us">关于我们</string>
+    <!-- list_detail_sport -->
+    <string name="detail_sport_list_id">三小油</string>
+    <string name="detail_sport_list_date">2015&#8211;12&#8211;23</string>
+    <string name="detail_sport_list_resp">可以送到宿舍吗</string>
+    <!-- list_my_msg -->
+    <string name="my_msg_list_id">三小油</string>
+    <string name="my_msg_list_resp">可以送到宿舍吗</string>
+    <string name="my_msg_list_oricontent">这里是原帖描述</string>
+    <!-- list_my_rls -->
+    <string name="my_rls_list_name">宝贝名称</string>
+    <string name="my_rls_list_content">这里是宝贝描述，不超过300字</string>
+    <string name="my_rls_list_date">2015&#8211;12&#8211;23</string>
+    <!-- list_sport_category -->
+    <string name="sport_category_list_price">150元</string>
+    <string name="sport_category_list_name">宝贝名称</string>
+    <string name="sport_category_list_content">这里是宝贝描述，不超过300字</string>
+    <string name="sport_category_list_date">2015&#8211;12&#8211;23</string>
 
 
 </resources>

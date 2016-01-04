@@ -19,11 +19,15 @@
                 android:layout_marginLeft="@dimen/left"
                 android:layout_gravity="center"
                 android:text="@string/goodname"
-                android:textSize="@dimen/vertical_nav"/>
+                android:textSize="@dimen/normal_size"/>
             <EditText
                 android:id="@+id/fr_goodname_edittext"
                 android:layout_width="match_parent"
                 android:layout_height="@dimen/text_height"
+                android:textSize="@dimen/sub_normal_size"
+                android:hint="@string/fragment_release_name"
+                android:paddingLeft="10dp"
+                android:paddingStart="10dp"
                 android:layout_marginRight="@dimen/right"
                 android:layout_marginLeft="@dimen/left_elem"
                 android:background="@drawable/back_circle"/>
@@ -38,16 +42,21 @@
                 android:id="@+id/fr_goodinfo_text"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_gravity="bottom"
+                android:layout_gravity="center_vertical"
                 android:layout_marginLeft="@dimen/left"
                 android:text="@string/gooddescription"
-                android:textSize="@dimen/vertical_nav"/>
+                android:textSize="@dimen/normal_size" />
             <EditText
                 android:id="@+id/fr_goodinfo_edittext"
                 android:layout_width="match_parent"
-                android:layout_height="@dimen/text_height"
+                android:layout_height="100dp"
                 android:layout_marginRight="@dimen/right"
                 android:layout_marginLeft="@dimen/left_elem"
+                android:hint="@string/fragment_release_description"
+                android:textSize="@dimen/sub_normal_size"
+                android:paddingLeft="10dp"
+                android:paddingTop="10dp"
+                android:gravity="top"
                 android:background="@drawable/back_circle"/>
         </LinearLayout>
         <LinearLayout
@@ -63,7 +72,7 @@
                 android:layout_gravity="center_vertical"
                 android:layout_marginLeft="@dimen/left"
                 android:text="@string/goodsort"
-                android:textSize="@dimen/vertical_nav"/>
+                android:textSize="@dimen/normal_size"/>
             <Spinner android:id="@+id/fr_goodsort_spinner"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -79,17 +88,19 @@
             >
             <Button
                 android:id="@+id/fr_addgoodpic_btn"
-                android:layout_width="100dp"
-                android:layout_height="120dp"
-                android:layout_gravity="bottom"
+                android:layout_width="120dp"
+                android:layout_height="128dp"
+                android:layout_gravity="center_vertical"
                 android:background="@drawable/button"
                 android:text="添加图片"
                 android:layout_marginLeft="10dp"
-                android:textSize="@dimen/h1"/>
+                android:textColor="#ffffff"
+                android:textSize="@dimen/normal_size"/>
             <ImageView
                 android:id="@+id/fr_addgoodpic_img"
-                android:layout_width="@dimen/img_m"
-                android:layout_height="@dimen/img_m"
+                android:layout_width="128dp"
+                android:layout_height="128dp"
+                android:layout_gravity="center_vertical"
                 android:layout_marginLeft="12dp"
                 android:src="@drawable/meishi_s"/>
         </LinearLayout>
@@ -106,13 +117,16 @@
                 android:layout_gravity="center"
                 android:layout_marginLeft="@dimen/left"
                 android:text="@string/contact"
-                android:textSize="@dimen/vertical_nav"/>
+                android:textSize="@dimen/normal_size"/>
             <EditText
                 android:id="@+id/fr_contact_edittext"
                 android:layout_width="match_parent"
                 android:layout_height="@dimen/text_height"
                 android:layout_marginRight="@dimen/right"
                 android:layout_marginLeft="@dimen/left_elem"
+                android:textSize="@dimen/sub_normal_size"
+                android:hint="@string/fragment_release_contact"
+                android:paddingLeft="10dp"
                 android:background="@drawable/back_circle"/>
 
         </LinearLayout>
@@ -130,7 +144,8 @@
                 android:background="@drawable/button"
                 android:layout_centerInParent="true"
                 android:text="@string/admit_release"
-                android:textSize="@dimen/h1" />
+                android:textColor="#ffffff"
+                android:textSize="@dimen/normal_size" />
         </LinearLayout>
     </RelativeLayout>
 </RelativeLayout>
