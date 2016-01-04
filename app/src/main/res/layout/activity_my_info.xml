@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:fitsSystemWindows="true"
+    tools:context=".MainActivity"
+    android:background="#f2f2f2">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/my_info_bar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@drawable/title_bar"
+            app:popupTheme="@style/AppTheme.PopupOverlay">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center"
+                android:text="@string/my_info_title"
+                android:textColor="@android:color/white"
+                android:textSize="22sp"
+                android:textStyle="bold"/>
+            <ImageView
+                android:id="@+id/my_info_back"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginStart="10dp"
+                android:src="@drawable/back" />
+
+        </android.support.v7.widget.Toolbar>
+
+    </android.support.design.widget.AppBarLayout>
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="60dp">
+
+        <ImageView
+            android:id="@+id/my_info_head"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginTop="30dp"
+            android:src="@drawable/head"/>
+        <LinearLayout
+            android:id="@+id/my_info_id_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_toRightOf="@+id/my_info_head">
+            <TextView
+                android:id="@+id/my_info_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/my_info_id"
+                android:textSize="18sp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginStart="10dp"/>
+            <EditText
+                android:id="@+id/my_info_id_edit"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/text_height"
+                android:hint="@string/my_info_name"
+                android:textSize="18sp"
+                android:singleLine="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginStart="10dp"
+                android:paddingLeft="10dp"
+                android:background="@drawable/conner_shape" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/my_info_head"
+            android:layout_below="@+id/my_info_id_layout"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/my_info_sig"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/my_info_sig"
+                android:textSize="18sp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dp"
+                android:layout_marginStart="10dp"/>
+
+            <EditText
+                android:id="@+id/my_info_sig_edit"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/text_height"
+                android:hint="@string/my_info_words"
+                android:textSize="18sp"
+                android:singleLine="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginStart="10dp"
+                android:paddingLeft="10dp"
+                android:background="@drawable/conner_shape" />
+        </LinearLayout>
+
+
+
+    </RelativeLayout>
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/divider"
+        android:layout_marginTop="180dp"/>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="200dp"
+        >
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:text="@string/my_info_phone"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="20dp"
+                android:layout_marginStart="20dp"/>
+            <EditText
+                android:id="@+id/my_info_phone"
+                android:inputType="phone"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/text_height"
+                android:textSize="18sp"
+                android:layout_marginRight="20dp"
+                android:layout_marginEnd="20dp"
+                android:hint="@string/my_info_number"
+                android:singleLine="true"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dp"
+                android:layout_marginStart="10dp"
+                android:paddingLeft="10dp"
+                android:background="@drawable/conner_shape"/>
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/divider"
+            android:layout_marginTop="10dp"/>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:text="@string/my_info_mail"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="20dp"
+                android:layout_marginStart="20dp"/>
+            <EditText
+                android:id="@+id/my_info_email"
+                android:inputType="textEmailAddress"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/text_height"
+                android:textSize="18sp"
+                android:layout_marginRight="20dp"
+                android:layout_marginEnd="20dp"
+                android:hint="@string/my_info_Email"
+                android:singleLine="true"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dp"
+                android:layout_marginStart="10dp"
+                android:paddingLeft="10dp"
+                android:background="@drawable/conner_shape"/>
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/divider"
+            android:layout_marginTop="10dp"/>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:text="@string/my_info_vipswd"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/left"
+                android:layout_marginStart="@dimen/left"/>
+            <ImageView
+                android:id="@+id/my_info_intopw"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center_vertical"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginRight="@dimen/right"
+                android:layout_marginEnd="@dimen/right"
+                android:background="@drawable/edit"
+                />
+        </RelativeLayout>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/divider"
+            android:layout_marginTop="@dimen/top_elem"/>
+
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="450dp">
+        <Button
+            android:id="@+id/my_info_save"
+            android:layout_width="128dp"
+            android:layout_height="128dp"
+            android:background="@drawable/button"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:layout_centerInParent="true"
+            android:text="@string/my_info_save"
+            android:textColor="#ffffff"
+            android:textSize="@dimen/normal_size"/>
+    </RelativeLayout>
+
+
+</android.support.design.widget.CoordinatorLayout>

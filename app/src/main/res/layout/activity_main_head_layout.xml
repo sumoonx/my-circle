@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+该文件是用于定义mainactivity的头布局
+被activity_main所包含
+12.26； yqman
+ -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="96px"
+    android:orientation="horizontal"
+    android:background="@color/colorpumpkin">
+    <TextView
+        android:id="@+id/amhl_title_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="6"
+        android:layout_gravity="center_vertical"
+        android:gravity="center"
+        android:text="@string/flea_market"
+        android:textSize="@dimen/h1"
+        android:textColor="@color/colorwhite"
+        android:textStyle="normal" />
+    <ImageView
+        android:id="@+id/amhl_search_img"
+        android:layout_width="48px"
+        android:layout_height="48px "
+        android:layout_weight="1"
+        android:src="@drawable/search"
+        android:layout_gravity="center_vertical"
+        />
+</LinearLayout>

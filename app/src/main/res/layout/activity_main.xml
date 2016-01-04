@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+该文件是用于定义mainactivity的布局
+由activity_main_head_layout.xml和fragment_pager.xml组成
+12.26； yqman
+ -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:layout_centerVertical="true">
+    <LinearLayout
+        android:id="@+id/head_LinearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <include layout="@layout/activity_main_head_layout" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_below="@+id/head_LinearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <include layout="@layout/fragment_pager" />
+    </LinearLayout>
+
+</RelativeLayout>
