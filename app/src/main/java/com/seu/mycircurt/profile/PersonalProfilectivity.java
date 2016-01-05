@@ -32,31 +32,31 @@ public class PersonalProfilectivity extends Activity implements View.OnClickList
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_personal_profile);
+        setContentView(R.layout.activity_my_info);
 
-        backClick = (ImageView) findViewById(R.id.per_info_back);
+        backClick = (ImageView) findViewById(R.id.my_info_back);
         backClick.setOnClickListener(this);
-        modifyPwdClick = (ImageView) findViewById(R.id.per_goto_pw);
+        modifyPwdClick = (ImageView) findViewById(R.id.my_info_intopw);
         modifyPwdClick.setOnClickListener(this);
-        commitClick = (Button) findViewById(R.id.per_info_save);
+        commitClick = (Button) findViewById(R.id.my_info_save);
         commitClick.setOnClickListener(this);
 
-        idEdit = (EditText) findViewById(R.id.per_edit_id);
-        signatureEdit = (EditText) findViewById(R.id.per_edit_sig);
-        phoneNumberEdit = (EditText) findViewById(R.id.per_edit_num);
-        emailEdit = (EditText) findViewById(R.id.per_edit_email);
+        idEdit = (EditText) findViewById(R.id.my_info_id_edit);
+        signatureEdit = (EditText) findViewById(R.id.my_info_sig_edit);
+        phoneNumberEdit = (EditText) findViewById(R.id.my_info_phone);
+        emailEdit = (EditText) findViewById(R.id.my_info_email);
     }
 
     @Override
     public void onClick(View v) {
         switch (v.getId()){
-            case R.id.per_info_back:
+            case R.id.my_info_back:
                 backOperation();
                 break;
-            case R.id.per_goto_pw:
+            case R.id.my_info_intopw:
                 modifyPwd();
                 break;
-            case R.id.per_info_save:
+            case R.id.my_info_save:
                 commitChanges();
                 break;
             default:

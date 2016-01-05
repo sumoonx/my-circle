@@ -10,7 +10,7 @@
         android:theme="@style/AppTheme.AppBarOverlay">
 
         <android.support.v7.widget.Toolbar
-            android:id="@+id/setting_bar"
+            android:id="@+id/about_us_bar"
             android:layout_width="match_parent"
             android:layout_height="?attr/actionBarSize"
             android:background="@drawable/title_bar"
@@ -21,76 +21,81 @@
                 android:layout_height="wrap_content"
                 android:layout_centerInParent="true"
                 android:layout_gravity="center"
-                android:text="@string/setting_title"
+                android:text="@string/about_us"
                 android:textColor="@android:color/white"
                 android:textSize="22sp"
                 android:textStyle="bold"/>
             <ImageView
-                android:id="@+id/setting_back"
+                android:id="@+id/about_us_back"
                 android:layout_width="32dp"
                 android:layout_height="32dp"
                 android:layout_centerHorizontal="true"
                 android:layout_centerVertical="true"
                 android:layout_marginLeft="10dp"
+                android:layout_marginStart="10dp"
                 android:src="@drawable/back" />
 
         </android.support.v7.widget.Toolbar>
 
     </android.support.design.widget.AppBarLayout>
-    <LinearLayout
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:layout_marginTop="20dp">
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="20dp"
-            android:layout_marginStart="20dp"
-            android:textSize="18sp"
-            android:text="@string/setting_alarm" />
-        <Switch
-            android:id="@+id/setting_switch"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textOff="关闭"
-            android:textOn="开启"
-            android:textSize="10pt"
-            android:layout_marginLeft="200dp"
-            android:layout_marginStart="200dp"/>
-    </LinearLayout>
     <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:src="@drawable/divider"
-        android:layout_marginTop="@dimen/top_elem"/>
+        android:src="@drawable/divider" />
     <LinearLayout
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:layout_marginTop="10dp">
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="20dp"
-            android:layout_marginStart="20dp"
+            android:text="@string/about_us_contact"
             android:textSize="18sp"
             android:layout_gravity="center_vertical"
-            android:text="@string/setting_clear" />
-        <ImageView
-            android:id="@+id/setting_clear"
-            android:layout_width="32dp"
-            android:layout_height="32dp"
-            android:src="@drawable/trash_can"
-            android:layout_marginLeft="200dp"
-            android:layout_marginStart="200dp"/>
+            android:layout_marginLeft="20dp"
+            android:layout_marginStart="20dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:text="@string/about_us_address"
+            android:layout_marginLeft="20dp"
+            android:layout_marginStart="20dp"/>
 
     </LinearLayout>
     <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:src="@drawable/divider"
-        android:layout_marginTop="@dimen/top_elem"/>
+        android:layout_marginTop="10dp"/>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/about_us_people"
+            android:textSize="18sp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="20dp"
+            android:layout_marginStart="20dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:text="@string/about_us_name"
+            android:layout_marginLeft="20dp"
+            android:layout_marginStart="20dp"/>
+
+    </LinearLayout>
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/divider"
+        android:layout_marginTop="10dp"/>
 
     <LinearLayout
         android:layout_width="fill_parent"
@@ -100,52 +105,24 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="20dp"
-            android:layout_marginStart="20dp"
+            android:text="@string/about_us_instruction"
             android:textSize="18sp"
-            android:text="@string/setting_feed_back" />
-        <ImageView
-            android:id="@+id/setting_feedback"
-            android:layout_width="32dp"
-            android:layout_height="32dp"
-            android:src="@drawable/arrow_back"
-            android:layout_marginLeft="200dp"
-            android:layout_marginStart="200dp"/>
-
-    </LinearLayout>
-    <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:src="@drawable/divider"
-        android:layout_marginTop="@dimen/top_elem"/>
-
-    <LinearLayout
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:layout_marginTop="10dp">
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="20dp"
+            android:layout_marginStart="20dp"/>
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="20dp"
-            android:layout_marginStart="20dp"
             android:textSize="18sp"
-            android:text="@string/setting_about_us"
-            android:layout_gravity="center_vertical"/>
-        <ImageView
-            android:id="@+id/setting_about"
-            android:layout_width="32dp"
-            android:layout_height="32dp"
-            android:src="@drawable/arrow_back"
-            android:layout_marginLeft="200dp"
-            android:layout_marginStart="200dp"/>
+            android:text="@string/about_us_saysome"
+            android:layout_marginLeft="20dp"
+            android:layout_marginStart="20dp"/>
 
     </LinearLayout>
-
     <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:src="@drawable/divider"
-        android:layout_marginTop="@dimen/top_elem"/>
+        android:layout_marginTop="10dp"/>
 
 </LinearLayout>

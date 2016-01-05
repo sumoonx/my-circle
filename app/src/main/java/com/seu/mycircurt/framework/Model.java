@@ -36,7 +36,6 @@ import android.support.annotation.Nullable;
  * {@link com.google.samples.apps.iosched.provider.ScheduleProvider}.
  */
 public interface Model {
-
     /**
      * @return an array of {@link QueryEnum} that can be processed by the model
      */

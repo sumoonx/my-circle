@@ -26,19 +26,19 @@ public class ModifyPwdActivity extends Activity implements View.OnClickListener{
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_modify_pwd);
 
-        backClick = (ImageView) findViewById(R.id.back_btn);
+        backClick = (ImageView) findViewById(R.id.modify_pwd_back);
         backClick.setOnClickListener(this);
-        commitModifyBtn = (Button) findViewById(R.id.commit_pwd_changes_btn);
+        commitModifyBtn = (Button) findViewById(R.id.modify_pwd_save);
         commitModifyBtn.setOnClickListener(this);
     }
 
     @Override
     public void onClick(View v) {
         switch (v.getId()){
-            case R.id.back_btn:
+            case R.id.modify_pwd_back:
                 backOperation();
                 break;
-            case R.id.commit_pwd_changes_btn:
+            case R.id.modify_pwd_save:
                 commitPwdChanges();
                 break;
             default:

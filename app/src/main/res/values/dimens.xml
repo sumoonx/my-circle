@@ -22,6 +22,11 @@
     <dimen name="p3">10pt</dimen>
     <dimen name="p4">9pt</dimen>
 
+    <dimen name="normal_size">18sp</dimen>
+    <dimen name="sub_normal_size">16sp</dimen>
+    <dimen name="small_size">14sp</dimen>
+    <dimen name="sub_small_size">12sp</dimen>
+
 
     <!-- 边距margin -->
     <!-- mine_main使用了（left，right）-->

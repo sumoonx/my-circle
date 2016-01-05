@@ -18,16 +18,16 @@ public class MyReleaseActivity extends Activity implements View.OnClickListener{
     private ImageView backClick;
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_my_release);
+        setContentView(R.layout.activity_my_rls);
 
-        backClick = (ImageView) findViewById(R.id.my_reles_back);
+        backClick = (ImageView) findViewById(R.id.my_rls_back);
         backClick.setOnClickListener(this);
     }
 
     @Override
     public void onClick(View v) {
         switch (v.getId()){
-            case R.id.my_reles_back:
+            case R.id.my_rls_back:
                 backOperation();
                 break;
             default:

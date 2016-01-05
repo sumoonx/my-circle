@@ -12,10 +12,10 @@
         android:theme="@style/AppTheme.AppBarOverlay">
 
         <android.support.v7.widget.Toolbar
-            android:id="@+id/sportbar"
+            android:id="@+id/sport_category_bar"
             android:layout_width="match_parent"
             android:layout_height="?attr/actionBarSize"
-            android:background="?attr/colorPrimary"
+            android:background="@drawable/title_bar"
             app:popupTheme="@style/AppTheme.PopupOverlay">
 
             <TextView
@@ -23,26 +23,25 @@
                 android:layout_height="wrap_content"
                 android:layout_centerInParent="true"
                 android:layout_gravity="center"
-                android:text="@string/sport"
+                android:text="@string/fragment_category_sport"
                 android:textColor="@android:color/white"
                 android:textSize="@dimen/h1"
                 android:textStyle="bold"/>
-            <ImageButton
-                android:id="@+id/sport_back"
-                android:layout_width="40dp"
-                android:layout_height="40dp"
+            <ImageView
+                android:id="@+id/sport_category_back"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
                 android:layout_centerHorizontal="true"
                 android:layout_centerVertical="true"
                 android:layout_marginLeft="10dp"
-                android:src="@drawable/arrow_back" />
+                android:src="@drawable/back" />
         </android.support.v7.widget.Toolbar>
     </android.support.design.widget.AppBarLayout>
 
     <ListView
-        android:id="@+id/list_sport"
+        android:id="@+id/sport_category_list"
         android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        >
+        android:layout_height="wrap_content">
     </ListView>
 
 

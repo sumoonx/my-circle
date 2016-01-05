@@ -45,10 +45,10 @@ public class MyCircurtFragment extends Fragment implements View.OnClickListener{
         myReleaseBtn = (ImageButton) myView.findViewById(R.id.fmc_myreleasedetail_imgbtn);
         myReleaseBtn.setOnClickListener(this);
 
-        myMessageBtn = (ImageButton) myView.findViewById(R.id.btn_edit_message);
+        myMessageBtn = (ImageButton) myView.findViewById(R.id.fmc_mymessagedetail_imgbtn);
         myMessageBtn.setOnClickListener(this);
 
-        settingBtn = (ImageButton) myView.findViewById(R.id.fmc_setting_imgbtn);
+        settingBtn = (ImageButton) myView.findViewById(R.id.fmc_settingdetail_imgbtn);
         settingBtn.setOnClickListener(this);
         return myView;
     }
@@ -63,10 +63,10 @@ public class MyCircurtFragment extends Fragment implements View.OnClickListener{
             case R.id.fmc_myreleasedetail_imgbtn:
                 startActivity(new Intent(getActivity(), MyReleaseActivity.class));
                 break;
-            case R.id.btn_edit_message:
+            case R.id.fmc_mymessagedetail_imgbtn:
                 startActivity(new Intent(getActivity(), MyMessageActivity.class));
                 break;
-            case R.id.fmc_setting_imgbtn:
+            case R.id.fmc_settingdetail_imgbtn:
                 startActivity(new Intent(getActivity(), SettingsActivity.class));
                 break;
             default:

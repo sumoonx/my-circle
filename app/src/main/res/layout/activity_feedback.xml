@@ -3,17 +3,18 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:background="#f2f2f2">
     <android.support.design.widget.AppBarLayout
         android:layout_height="wrap_content"
         android:layout_width="match_parent"
         android:theme="@style/AppTheme.AppBarOverlay">
 
         <android.support.v7.widget.Toolbar
-            android:id="@+id/set_bar"
+            android:id="@+id/feed_back_bar"
             android:layout_width="match_parent"
             android:layout_height="?attr/actionBarSize"
-            android:background="?attr/colorPrimary"
+            android:background="@drawable/title_bar"
             app:popupTheme="@style/AppTheme.PopupOverlay">
 
             <TextView
@@ -21,19 +22,19 @@
                 android:layout_height="wrap_content"
                 android:layout_centerInParent="true"
                 android:layout_gravity="center"
-                android:text="意见反馈"
+                android:text="@string/feed_back_title"
                 android:textColor="@android:color/white"
-                android:textSize="25sp"
+                android:textSize="22sp"
                 android:textStyle="bold"/>
             <ImageView
-                android:id="@+id/feed_back_arrow"
-                android:layout_width="40dp"
-                android:layout_height="40dp"
+                android:id="@+id/feed_back_back"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
                 android:layout_centerHorizontal="true"
                 android:layout_centerVertical="true"
                 android:layout_marginLeft="10dp"
                 android:layout_marginStart="10dp"
-                android:src="@drawable/arrow_back" />
+                android:src="@drawable/back" />
 
         </android.support.v7.widget.Toolbar>
 
@@ -51,14 +52,17 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp">
         <Button
-            android:id="@+id/feed_back_commit"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textSize="10pt"
-            android:text="提交"
-            android:layout_alignParentRight="true"
-            android:layout_marginRight="20dp"/>
-
+            android:id="@+id/feed_back_save"
+            android:layout_width="128dp"
+            android:layout_height="128dp"
+            android:background="@drawable/button"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:layout_centerInParent="true"
+            android:text="@string/feed_back_save"
+            android:textColor="#ffffff"
+            android:textSize="@dimen/normal_size"/>
     </RelativeLayout>
 
 </LinearLayout>
+

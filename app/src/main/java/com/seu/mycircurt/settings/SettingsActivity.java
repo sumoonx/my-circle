@@ -21,14 +21,14 @@ public class SettingsActivity extends Activity implements View.OnClickListener {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_setting);
 
-        feedBackBtn = (ImageView) findViewById(R.id.set_callback);
+        feedBackBtn = (ImageView) findViewById(R.id.setting_back);
         feedBackBtn.setOnClickListener(this);
     }
 
     @Override
     public void onClick(View v) {
         switch (v.getId()){
-            case R.id.set_callback:
+            case R.id.setting_back:
                 feedBackAction();
                 break;
             default:

@@ -27,8 +27,8 @@
                 android:layout_alignTop="@id/fmc_profile_img"
                 android:layout_marginTop="@dimen/top_elem"
                 android:layout_marginLeft="@dimen/left_elem"
-                android:text="@string/id_hint"
-                android:textSize="@dimen/text_normal" />
+                android:text="@string/fragment_my_circurt_id"
+                android:textSize="@dimen/sub_normal_size" />
             <TextView
                 android:id="@+id/fmc_motto_text"
                 android:layout_width="wrap_content"
@@ -37,8 +37,8 @@
                 android:layout_alignBottom="@id/fmc_profile_img"
                 android:layout_below="@id/fmc_username_text"
                 android:layout_marginLeft="@dimen/right_elem"
-                android:text="@string/signature_hint"
-                android:textSize="@dimen/text_normal"
+                android:text="@string/fragment_my_circurt_motto"
+                android:textSize="@dimen/sub_normal_size"
                 android:gravity="center_vertical"/>
             <ImageButton
                 android:id="@+id/fmc_userdetail_imgbtn"
@@ -71,12 +71,12 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="@dimen/top_elem"
                 android:layout_marginLeft="@dimen/left"
-                android:text="@string/myrelease"
-                android:textSize="@dimen/vertical_nav" />
+                android:text="@string/fragment_my_circurt_myrelease"
+                android:textSize="@dimen/normal_size" />
             <ImageButton
                 android:id="@+id/fmc_myreleasedetail_imgbtn"
+                android:layout_height="wrap_content"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content "
                 android:layout_alignParentRight="true"
                 android:layout_centerVertical="true"
                 android:layout_marginRight="@dimen/right"
@@ -104,15 +104,14 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="@dimen/top_elem"
                 android:layout_marginLeft="@dimen/left"
-                android:text="@string/mymessage"
-                android:textSize="@dimen/vertical_nav" />
+                android:text="@string/fragment_my_circurt_mymessage"
+                android:textSize="@dimen/normal_size" />
             <ImageButton
                 android:id="@+id/fmc_mymessagedetail_imgbtn"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content "
+                android:layout_height="wrap_content"
                 android:layout_marginTop="@dimen/top_elem"
                 android:layout_alignParentRight="true"
-                android:layout_centerVertical="true"
                 android:layout_marginRight="@dimen/right"
                 android:src="@drawable/btn_down"
                 android:background="#ffffff"/>
@@ -138,8 +137,8 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="@dimen/top_elem"
                 android:layout_marginLeft="@dimen/left"
-                android:text="@string/setting"
-                android:textSize="@dimen/vertical_nav" />
+                android:text="@string/fragment_my_circurt_setting"
+                android:textSize="@dimen/normal_size" />
             <ImageButton
                 android:id="@+id/fmc_settingdetail_imgbtn"
                 android:layout_width="wrap_content"
@@ -172,8 +171,9 @@
                 android:layout_gravity="center"
                 android:background="@drawable/button"
                 android:layout_centerInParent="true"
-                android:text="@string/quit"
-                android:textSize="@dimen/h1" />
+                android:text="@string/fragment_my_circurt_quit"
+                android:textColor="#ffffff"
+                android:textSize="@dimen/normal_size" />
         </LinearLayout>
     </RelativeLayout>
 </RelativeLayout>

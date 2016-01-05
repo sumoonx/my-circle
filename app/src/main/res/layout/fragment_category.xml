@@ -26,7 +26,7 @@
                 android:id="@+id/fc_sport_text"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/sport"
+                android:text="@string/fragment_category_sport"
                 android:layout_gravity="center"
                 android:textSize="@dimen/h2"
                 android:textStyle="normal"/>
@@ -47,7 +47,7 @@
                 android:id="@+id/fc_book_text"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/book"
+                android:text="@string/fragment_category_book"
                 android:layout_gravity="center"
                 android:textSize="@dimen/h2"
                 android:textStyle="normal"/>
@@ -68,7 +68,7 @@
                 android:id="@+id/fc_cloth_text"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/cloth"
+                android:text="@string/fragment_category_cloth"
                 android:layout_gravity="center"
                 android:textSize="@dimen/h2"
                 android:textStyle="normal"/>
@@ -89,7 +89,7 @@
                 android:id="@+id/fc_stationary_text"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/stationery"
+                android:text="@string/fragment_category_stationery"
                 android:layout_gravity="center"
                 android:textSize="@dimen/h2"
                 android:textStyle="normal"/>
@@ -111,7 +111,7 @@
                 android:id="@+id/fc_makeup_text"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/makeup"
+                android:text="@string/fragment_category_makeup"
                 android:layout_gravity="center"
                 android:textSize="@dimen/h2"
                 android:textStyle="normal"/>
@@ -132,7 +132,7 @@
                 android:id="@+id/fc_outdoor_text"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/outdoor"
+                android:text="@string/fragment_category_outdoor"
                 android:layout_gravity="center"
                 android:textSize="@dimen/h2"
                 android:textStyle="normal"/>
@@ -153,7 +153,7 @@
                 android:id="@+id/fc_electronic_text"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/electronic"
+                android:text="@string/fragment_category_electronic"
                 android:layout_gravity="center"
                 android:textSize="@dimen/h2"
                 android:textStyle="normal"/>
@@ -174,7 +174,7 @@
                 android:id="@+id/fc_other_text"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/other"
+                android:text="@string/fragment_category_other"
                 android:layout_gravity="center"
                 android:textSize="@dimen/h2"
                 android:textStyle="normal"/>

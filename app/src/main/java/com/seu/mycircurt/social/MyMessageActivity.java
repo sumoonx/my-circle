@@ -17,7 +17,7 @@ public class MyMessageActivity extends Activity implements View.OnClickListener{
     private ImageView backclick;
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_my_message);
+        setContentView(R.layout.activity_my_msg);
 
         backclick = (ImageView) findViewById(R.id.my_msg_back);
         backclick.setOnClickListener(this);
