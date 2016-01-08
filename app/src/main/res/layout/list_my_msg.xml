@@ -32,7 +32,7 @@
         android:singleLine="true"
         android:ellipsize="end"/>
     <TextView
-        android:id="@+id/my_msg_detail"
+        android:id="@+id/my_msg_list_detail"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/my_msg_list_resp"

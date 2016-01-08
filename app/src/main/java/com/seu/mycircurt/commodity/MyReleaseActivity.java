@@ -22,7 +22,7 @@ import java.util.Map;
 /**
  * description
  * @author yqman on 2016/1/8
- * e-mail evanman@163.com
+ * e-mail evanman0618@163.com
  * @version v0.0
  */
 public class MyReleaseActivity extends BaseActivity implements View.OnClickListener{
