@@ -24,6 +24,7 @@ import java.util.Map;
  * @author yqman on 2016/1/8
  * e-mail evanman0618@163.com
  * @version v0.0
+ * @reference http://www.cnblogs.com/ProgramBull/archive/2012/02/06/2340401.html
  */
 public class MyReleaseActivity extends BaseActivity implements View.OnClickListener{
     private ImageView backClick;
