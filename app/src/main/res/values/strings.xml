@@ -1,4 +1,35 @@
 <resources>
+    <string name="please_login_first">亲，您还没有登录！</string>
+
+    <string name="username">用户名</string>
+
+    <string name="password">密码</string>
+
+    <string name="login">登录</string>
+
+    <string name="username_password_not_match">用户名和密码不相符，请重试</string>
+
+    <string name="login_hint">测试账号：\n用户名：admin， 密码：admin</string>
+
+    <string name="is_login">正在登录...</string>
+
+    <string name="network_error">"网络错误，请您先检查一下网络连接！"</string>
+
+    <string name="login_success">登录成功！</string>
+
+    <string name="please_push_again_to_qiut">请再按一次退出程序</string>
+
+    <string name="alert_dialog_title">提示</string>
+
+    <string name="login_needed">您尚未登录，是否需要登录？</string>
+
+    <string name="i_know">我知道了</string>
+
+    <string name="go_login">去登录</string>
+
+    <string name="title_activity_login">LoginActivity</string>
+
+
     <string name="app_name">跳骚市场</string>
     <string name="action_settings">Settings</string>
 
@@ -114,5 +145,12 @@
     <string name="sport_category_list_content">这里是宝贝描述，不超过300字</string>
     <string name="sport_category_list_date">2015&#8211;12&#8211;23</string>
 
+    <string name="not_login">未登陆</string>
+    <string name="unknow_region">未知区域</string>
+    <string name="seu_region">东南大学</string>
+
+    <string name="drawer_open">打开菜单</string>
+
+    <string name="drawer_close">关闭菜单</string>
 
 </resources>
