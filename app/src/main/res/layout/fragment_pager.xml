@@ -17,7 +17,7 @@
         android:layout_weight="1.0"
         android:flipInterval="30"
         android:persistentDrawingCache="animation" />
-    <com.seu.mycircurt.utils.TitleIndicator
+    <com.seu.mycircle.utils.TitleIndicator
         android:id="@+id/vPager_title"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"/>

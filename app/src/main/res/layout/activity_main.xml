@@ -35,7 +35,7 @@
         >
 
         <fragment
-            android:name="com.seu.mycircurt.ui.fragments.DrawerFragment"
+            android:name="com.seu.mycircle.ui.fragments.DrawerFragment"
             android:id="@+id/drawerFragment"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
